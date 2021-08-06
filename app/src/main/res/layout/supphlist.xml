@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_actionbar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:topLeftRadius="25dp"
+            android:topRightRadius="25dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/ic_delete" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:text=" Suppression "
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorGrey1"
+        android:text=" Es-tu sùr de vouloir supprimer cette historique ?"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite" />
+        <TextView
+            android:id="@+id/supprimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:text="SUPPRIMER"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/annuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:text="ANNULER"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iconListe"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_myorder"
+    />
+
+    <TextView
+        android:id="@+id/dateAchat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/coresans_cr_regular"
+        android:text="date d'achat"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toEndOf="@+id/iconListe"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/nbproduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/coresans_cr_regular"
+        android:text="0 produit"
+        android:textColor="@color/colorGrey"
+        app:layout_constraintStart_toEndOf="@+id/iconListe"
+        app:layout_constraintTop_toBottomOf="@+id/dateAchat" />
+
+    <TextView
+        android:id="@+id/pricepanier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/coresans_cr_regular"
+        android:text=" 0000 "
+        android:textColor="@color/colorGrey"
+        app:layout_constraintEnd_toStartOf="@+id/dt"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toEndOf="@+id/nbproduit"
+        app:layout_constraintTop_toBottomOf="@+id/dateAchat" />
+
+    <TextView
+        android:id="@+id/dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/coresans_cr_regular"
+        android:text=" DT"
+        android:textColor="@color/colorGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateAchat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

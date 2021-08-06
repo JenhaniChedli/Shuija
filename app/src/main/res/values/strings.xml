@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Shuija</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_list">Liste</string>
+    <string name="menu_hlist">Historique Liste</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="title_activity_historic_item">HistoricItem</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_hlist_item">hlistItem</string>
+    <string name="title_activity_item_search_product">ItemSearchProduct</string>
+    <string name="textview">TextView</string>
+</resources>

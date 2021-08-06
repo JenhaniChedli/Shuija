@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_gray"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_actionbar2"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/nameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:gravity="center"
+            android:text="les points des ventes "
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/poslist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/txtok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:text="  OK  "
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtannuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:text="ANNULER"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
